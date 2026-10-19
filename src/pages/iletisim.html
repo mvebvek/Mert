@@ -1,0 +1,52 @@
+---
+title: Ön görüşme · Eşik
+description: 20 dakikalık ücretsiz ön görüşme. Diplomanı, hedef alanını ve dil seviyeni yaz; Almanya yolunu birlikte çıkaralım.
+nav: iletisim
+---
+<main class="wrap" id="top">
+  <section id="iletisim" class="first">
+    <div class="duo">
+      <div class="stack">
+        <p class="label">Kim?</p>
+        <h1 class="title">Bu yolu kendisi yürümüş biri.</h1>
+        <p class="measure muted">Eşik, Münih Teknik Üniversitesi'nde (TUM) makine mühendisliği okuyan d3st tarafından kuruldu. Türkçe, Almanca ve İngilizce konuşuyor; Türkiye'den Almanya'ya akademik geçişi kendisi yaşadı.</p>
+        <p class="measure muted">Hazırlık sistemi, yapay zekâ ile Sokratik öğrenme üzerine yürüttüğü akademik çalışmadan doğdu: öğrencinin yerine düşünen değil, düşünmesini sağlayan bir asistan.</p>
+        <p class="measure muted">Kurumlardan komisyon almıyoruz. Önerdiğimiz her program, sana ne uyduğuna göre seçilir.</p>
+        <dl class="result reach">
+          <div><dt>E-posta</dt><dd>{{contact.email}}</dd></div>
+          <div><dt>Instagram</dt><dd>{{contact.instagram}}</dd></div>
+        </dl>
+      </div>
+      <div class="contact">
+        <p class="label on-ink">İletişim</p>
+        <h2>20 dakikalık ücretsiz ön görüşme</h2>
+        <p>Formu doldur; e-posta uygulaman mesajın hazır şekilde açılır. Ne kadar ayrıntı verirsen görüşmeye o kadar hazırlıklı geliriz.</p>
+        <form class="form" id="cf" data-to="{{site.email}}" novalidate>
+          <div class="pair">
+            <div class="field"><label for="cf-ad">Ad soyad</label><input id="cf-ad" name="ad" autocomplete="name" required></div>
+            <div class="field"><label for="cf-eposta">E-posta</label><input id="cf-eposta" name="eposta" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field"><label for="cf-durum">Şu an neredesin?</label>
+            <select id="cf-durum" name="durum" required>
+              <option value="">Seç</option>
+              <option value="lise">Lise son sınıf ya da mezun</option>
+              <option value="yks">YKS ile yerleştim ya da Türkiye'de lisans okuyorum</option>
+              <option value="bsc">Lisans mezunuyum, yüksek lisans istiyorum</option>
+              <option value="abi">Alman lisesinde Abitur aldım</option>
+              <option value="diger">Diğer</option>
+            </select>
+          </div>
+          <div class="pair">
+            <div class="field"><label for="cf-alan">İlgilendiğin alan</label><input id="cf-alan" name="alan" placeholder="ör. makine mühendisliği"></div>
+            <div class="field"><label for="cf-donem">Hedef dönem</label><input id="cf-donem" name="donem" placeholder="ör. kış 2027/28"></div>
+          </div>
+          <div class="field"><label for="cf-dil">Almanca ya da İngilizce seviyen</label><input id="cf-dil" name="dil" placeholder="ör. Almanca B1, IELTS 6.5"></div>
+          <div class="field"><label for="cf-mesaj">Mesajın</label><textarea id="cf-mesaj" name="mesaj" placeholder="Diploman, varsa YKS sonucun ve aklındaki sorular"></textarea></div>
+          <p class="consent">Bilgilerin yalnızca e-posta uygulaman üzerinden bize gönderilir; bu sitede saklanmaz. Ayrıntılar: <a href="datenschutz.html">Datenschutz</a>.</p>
+          <button class="btn primary" type="submit">Mesajı hazırla</button>
+          <div class="formnote" id="cf-out" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
